@@ -1,10 +1,15 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+
+module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
+  darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+
+      }
+    },
   },
   plugins: [],
 };
-
-module.exports = config;
