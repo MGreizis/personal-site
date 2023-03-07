@@ -19,9 +19,9 @@ const Home: NextPage = () => {
       <Header />
       <main
         className="flex min-h-screen flex-col items-center justify-center
-        bg-gradient-to-b from-[#e2d5c3] to-white dark:from-[#000807] dark:to-[#4b2850]"
+        bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
       >
-        <h1 className="text-2xl text-[#000807] dark:text-[#e2d5c3]">Yo</h1>
+        <h1 className="text-2xl text-cstmblack dark:text-beige">Yo</h1>
       </main>
     </>
   );
