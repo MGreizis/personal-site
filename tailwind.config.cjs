@@ -10,7 +10,7 @@ module.exports = {
         beige: "#e2d5c3",
         cstmblack: "#000807",
         cstmpurple: "#4b2850",
-      }
+      },
     },
   },
   plugins: [],
