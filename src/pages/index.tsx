@@ -27,8 +27,11 @@ const Home: NextPage = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="flex text-left text-8xl text-cstmblack dark:text-beige">
-            Amet laborum commodo consectetur ullamco dolore culpa in.
+          <h1 className="flex text-left text-8xl text-cstmblack dark:text-beige pb-12">
+            Hi! I`m Mārtiņš!
+          </h1>
+          <h1 className="flex text-left text-6xl text-cstmblack dark:text-beige">
+            I`m a Junior Software Developer!
           </h1>
         </motion.section>
 
@@ -38,10 +41,7 @@ const Home: NextPage = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <motion.div
-          whileHover={{ scale: 1.1 }}
-          transition={{ duration: 1 }}
-          >
+          <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 1 }}>
             <Image
               src={selfImage}
               alt="Image of a funny cat"

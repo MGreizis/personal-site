@@ -36,9 +36,9 @@ export default function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             className="mr-6 text-cstmblack hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:text-beige dark:hover:text-white"
-            href="#"
+            href="contact"
           >
-            Third Link
+            Contact
           </motion.a>
         </nav>
         <span className="border-l-2 border-cstmpurple dark:border-white">
