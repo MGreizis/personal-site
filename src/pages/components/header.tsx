@@ -20,7 +20,7 @@ export default function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
-            href="#"
+            href="about"
           >
             About Me
           </motion.a>
@@ -28,7 +28,7 @@ export default function Header() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
             className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
-            href="#"
+            href="projects"
           >
             My Work
           </motion.a>
