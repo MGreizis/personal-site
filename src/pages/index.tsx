@@ -44,8 +44,8 @@ const Home: NextPage = () => {
           <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 1 }}>
             <Image
               src={selfImage}
-              alt="Image of a funny cat"
-              className="rounded-2xl"
+              alt="Image of the developer"
+              className="rounded-2xl sm:max-h-[50%]"
               width="500"
               height="700"
             />
