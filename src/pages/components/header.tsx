@@ -15,27 +15,27 @@ export default function Header() {
             Placeholder
           </Link>
         </span>
-        <nav className="flex flex-wrap items-center justify-center text-xl md:ml-auto">
+        <nav className="flex flex-wrap items-center justify-center text-xl text-cstmblack dark:text-beige md:ml-auto">
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 text-cstmblack hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:text-beige dark:hover:text-white"
+            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
             href="#"
           >
-            First Link
+            About Me
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 text-cstmblack hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:text-beige dark:hover:text-white"
+            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
             href="#"
           >
-            Second Link
+            My Work
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 text-cstmblack hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:text-beige dark:hover:text-white"
+            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
             href="contact"
           >
             Contact
