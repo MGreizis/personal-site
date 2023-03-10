@@ -43,7 +43,10 @@ const Contact: NextPage = () => {
                     <input
                       type="text"
                       id="name"
-                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-cstmblack focus:ring-1 focus:ring-cstmblack dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50
+                      py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out
+                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
+                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
                     />
                   </div>
                 </div>
@@ -55,7 +58,10 @@ const Contact: NextPage = () => {
                     <input
                       type="email"
                       id="email"
-                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-cstmblack focus:ring-1 focus:ring-cstmblack dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
+                      py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out 
+                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
+                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
                     />
                   </div>
                 </div>
@@ -66,14 +72,20 @@ const Contact: NextPage = () => {
                     </label>
                     <textarea
                       id="message"
-                      className="h-32 w-full resize-none rounded border border-cstmpurple bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-6 outline-none transition-colors duration-200 ease-in-out focus:border-cstmblack focus:ring-1 focus:ring-cstmblack dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className="h-32 w-full resize-none rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
+                      py-1 px-3 text-base leading-6 outline-none transition-colors duration-200 ease-in-out 
+                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
+                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
                     ></textarea>
                   </div>
                 </div>
                 <div className="w-full pt-3">
-                  <motion.button className="mx-auto flex rounded border-0 bg-cstmpurple py-2 px-8 text-lg text-beige hover:bg-cstmblack focus:outline-none dark:bg-beige dark:text-cstmblack dark:hover:bg-white"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.8 }}
+                  <motion.button
+                    className="mx-auto flex rounded border-0 bg-cstmpurple py-2 px-8 text-lg 
+                    text-beige hover:bg-cstmblack focus:outline-none 
+                    dark:bg-beige dark:text-cstmblack dark:hover:bg-white"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.8 }}
                   >
                     Button
                   </motion.button>

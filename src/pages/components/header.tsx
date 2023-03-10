@@ -44,7 +44,8 @@ export default function Header() {
         <span className="border-l-2 border-cstmpurple dark:border-white">
           <button
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className="mt-4 inline-flex items-center rounded py-1 px-3 text-xl hover:text-cstmpurple focus:outline-none dark:hover:text-white md:mt-0"
+            className="mt-4 inline-flex items-center rounded py-1 px-3 
+            text-xl hover:text-cstmpurple focus:outline-none dark:hover:text-white md:mt-0"
           >
             Dark Toggle
           </button>
