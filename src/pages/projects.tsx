@@ -2,6 +2,8 @@ import { type NextPage } from "next";
 import Head from "next/head";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Projects: NextPage = () => {
   return (
@@ -13,8 +15,125 @@ const Projects: NextPage = () => {
       </Head>
 
       <Header />
-      <main className="flex min-h-screen min-w-full items-center justify-evenly 
-      bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple">
+      <main
+        className="flex min-h-screen min-w-full items-center justify-evenly 
+      bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
+      >
+        <section className="body-font text-gray-600">
+          <div className="container mx-auto px-5 py-24">
+            <div className="-m-4 flex flex-wrap">
+              {/* Need to move the animations to the div below */}
+              <motion.div
+                className="p-4 md:w-1/2 xl:w-1/4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                  <Image
+                    className="mb-6 h-40 w-full rounded object-cover object-center"
+                    src="https://dummyimage.com/720x400"
+                    alt="content"
+                    width="720"
+                    height="400"
+                  />
+                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                    One of my projects
+                  </h2>
+                  <p className="leading-relaxed text-white dark:text-cstmblack">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                className="p-4 md:w-1/2 xl:w-1/4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                  <Image
+                    className="mb-6 h-40 w-full rounded object-cover object-center"
+                    src="https://dummyimage.com/720x400"
+                    alt="content"
+                    width="720"
+                    height="400"
+                  />
+                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                    One of my projects
+                  </h2>
+                  <p className="leading-relaxed text-white dark:text-cstmblack">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                className="p-4 md:w-1/2 xl:w-1/4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                  <Image
+                    className="mb-6 h-40 w-full rounded object-cover object-center"
+                    src="https://dummyimage.com/720x400"
+                    alt="content"
+                    width="720"
+                    height="400"
+                  />
+                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                    One of my projects
+                  </h2>
+                  <p className="leading-relaxed text-white dark:text-cstmblack">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                className="p-4 md:w-1/2 xl:w-1/4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                  <Image
+                    className="mb-6 h-40 w-full rounded object-cover object-center"
+                    src="https://dummyimage.com/720x400"
+                    alt="content"
+                    width="720"
+                    height="400"
+                  />
+                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                    SUBTITLE
+                  </h3>
+                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                    One of my projects
+                  </h2>
+                  <p className="leading-relaxed text-white dark:text-cstmblack">
+                    Fingerstache flexitarian street art 8-bit waistcoat.
+                    Distillery hexagon disrupt edison bulbche.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
