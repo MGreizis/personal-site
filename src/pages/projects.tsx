@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import plushieMarketplace from "../../public/plushie-marketplace.png";
 import adventureGame from "../../public/adventure-game.png";
+import lwm from "../../public/lwm.png";
 
 const Projects: NextPage = () => {
   return (
@@ -35,8 +36,8 @@ const Projects: NextPage = () => {
                   className="mb-6 h-40 w-full rounded object-cover object-center"
                   src={plushieMarketplace}
                   alt="content"
-                  width="720"
-                  height="400"
+                  width="800"
+                  height="500"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
                   MARKETPLACE
@@ -78,8 +79,8 @@ const Projects: NextPage = () => {
                   className="mb-6 h-40 w-full rounded object-cover object-center"
                   src={adventureGame}
                   alt="content"
-                  width="720"
-                  height="400"
+                  width="800"
+                  height="500"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
                   CONSOLE GAME
@@ -112,21 +113,30 @@ const Projects: NextPage = () => {
               >
                 <Image
                   className="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="https://dummyimage.com/720x400"
+                  src={lwm}
                   alt="content"
-                  width="720"
-                  height="400"
+                  width="800"
+                  height="500"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                  SUBTITLE
+                  INTRANET
                 </h3>
                 <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                  One of my projects
+                  An Intranet built with Laravel and Bulma
                 </h2>
                 <p className="leading-relaxed text-white dark:text-cstmblack">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  A group project for a company intranet using Laravel and 
+                  Bulma. Simple, yet functional and attractive.
                 </p>
+                <div className="flex flex-wrap">
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://github.com/MGreizis/Team-10-LWM-Project"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </motion.div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/4">
@@ -139,10 +149,10 @@ const Projects: NextPage = () => {
               >
                 <Image
                   className="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="https://dummyimage.com/720x400"
+                  src="https://dummyimage.com/800x500"
                   alt="content"
-                  width="720"
-                  height="400"
+                  width="800"
+                  height="500"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
                   SUBTITLE
