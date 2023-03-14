@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import plushieMarketplace from "../../public/plushie-marketplace.png";
 
 const Projects: NextPage = () => {
   return (
@@ -19,118 +20,129 @@ const Projects: NextPage = () => {
         className="flex min-h-screen min-w-full items-center justify-evenly 
       bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
       >
-        <section className="body-font text-gray-600">
-          <div className="container mx-auto px-5 py-24">
-            <div className="-m-4 flex flex-wrap">
-              {/* Need to move the animations to the div below */}
-              <div className="p-4 md:w-1/2 xl:w-1/4">
-                <motion.div
-                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  <Image
-                    className="mb-6 h-40 w-full rounded object-cover object-center"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                    width="720"
-                    height="400"
-                  />
-                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                    One of my projects
-                  </h2>
-                  <p className="leading-relaxed text-white dark:text-cstmblack">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </motion.div>
-              </div>
-              <div className="p-4 md:w-1/2 xl:w-1/4">
-                <motion.div
-                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  <Image
-                    className="mb-6 h-40 w-full rounded object-cover object-center"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                    width="720"
-                    height="400"
-                  />
-                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                    One of my projects
-                  </h2>
-                  <p className="leading-relaxed text-white dark:text-cstmblack">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </motion.div>
-              </div>
-              <div className="p-4 md:w-1/2 xl:w-1/4">
-                <motion.div
-                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  <Image
-                    className="mb-6 h-40 w-full rounded object-cover object-center"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                    width="720"
-                    height="400"
-                  />
-                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                    One of my projects
-                  </h2>
-                  <p className="leading-relaxed text-white dark:text-cstmblack">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </motion.div>
-              </div>
-              <div className="p-4 md:w-1/2 xl:w-1/4">
-                <motion.div
-                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                  whileHover={{ scale: 1.1 }}
-                >
-                  <Image
-                    className="mb-6 h-40 w-full rounded object-cover object-center"
-                    src="https://dummyimage.com/720x400"
-                    alt="content"
-                    width="720"
-                    height="400"
-                  />
-                  <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                    SUBTITLE
-                  </h3>
-                  <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                    One of my projects
-                  </h2>
-                  <p className="leading-relaxed text-white dark:text-cstmblack">
-                    Fingerstache flexitarian street art 8-bit waistcoat.
-                    Distillery hexagon disrupt edison bulbche.
-                  </p>
-                </motion.div>
-              </div>
+        <section className="body-font container mx-auto px-5 py-24">
+          <div className="-m-4 flex flex-wrap">
+            <div className="p-4 md:w-1/2 xl:w-1/4">
+              <motion.div
+                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  className="mb-6 h-40 w-full rounded object-cover object-center"
+                  src={plushieMarketplace}
+                  alt="content"
+                  width="720"
+                  height="400"
+                />
+                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                  MARKETPLACE
+                </h3>
+                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                  Skeleton site for a Plushie Marketplace
+                </h2>
+                <p className="leading-relaxed text-white dark:text-cstmblack">
+                  A simple skeleton site for a plushie marketplace. It is built
+                  with plain HTML and CSS, as a group project
+                </p>
+                <div className="flex flex-wrap">
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://github.com/MGreizis/brainnest-week2"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://mgreizis.github.io/brainnest-week2/"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </motion.div>
+            </div>
+            <div className="p-4 md:w-1/2 xl:w-1/4">
+              <motion.div
+                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  className="mb-6 h-40 w-full rounded object-cover object-center"
+                  src="https://dummyimage.com/720x400"
+                  alt="content"
+                  width="720"
+                  height="400"
+                />
+                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                  SUBTITLE
+                </h3>
+                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                  One of my projects
+                </h2>
+                <p className="leading-relaxed text-white dark:text-cstmblack">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </motion.div>
+            </div>
+            <div className="p-4 md:w-1/2 xl:w-1/4">
+              <motion.div
+                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  className="mb-6 h-40 w-full rounded object-cover object-center"
+                  src="https://dummyimage.com/720x400"
+                  alt="content"
+                  width="720"
+                  height="400"
+                />
+                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                  SUBTITLE
+                </h3>
+                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                  One of my projects
+                </h2>
+                <p className="leading-relaxed text-white dark:text-cstmblack">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </motion.div>
+            </div>
+            <div className="p-4 md:w-1/2 xl:w-1/4">
+              <motion.div
+                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  className="mb-6 h-40 w-full rounded object-cover object-center"
+                  src="https://dummyimage.com/720x400"
+                  alt="content"
+                  width="720"
+                  height="400"
+                />
+                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                  SUBTITLE
+                </h3>
+                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                  One of my projects
+                </h2>
+                <p className="leading-relaxed text-white dark:text-cstmblack">
+                  Fingerstache flexitarian street art 8-bit waistcoat.
+                  Distillery hexagon disrupt edison bulbche.
+                </p>
+              </motion.div>
             </div>
           </div>
         </section>
