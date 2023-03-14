@@ -23,14 +23,14 @@ const Projects: NextPage = () => {
           <div className="container mx-auto px-5 py-24">
             <div className="-m-4 flex flex-wrap">
               {/* Need to move the animations to the div below */}
-              <motion.div
-                className="p-4 md:w-1/2 xl:w-1/4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+              <div className="p-4 md:w-1/2 xl:w-1/4">
+                <motion.div
+                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
                   <Image
                     className="mb-6 h-40 w-full rounded object-cover object-center"
                     src="https://dummyimage.com/720x400"
@@ -48,16 +48,16 @@ const Projects: NextPage = () => {
                     Fingerstache flexitarian street art 8-bit waistcoat.
                     Distillery hexagon disrupt edison bulbche.
                   </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="p-4 md:w-1/2 xl:w-1/4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                </motion.div>
+              </div>
+              <div className="p-4 md:w-1/2 xl:w-1/4">
+                <motion.div
+                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
                   <Image
                     className="mb-6 h-40 w-full rounded object-cover object-center"
                     src="https://dummyimage.com/720x400"
@@ -75,16 +75,16 @@ const Projects: NextPage = () => {
                     Fingerstache flexitarian street art 8-bit waistcoat.
                     Distillery hexagon disrupt edison bulbche.
                   </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="p-4 md:w-1/2 xl:w-1/4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                </motion.div>
+              </div>
+              <div className="p-4 md:w-1/2 xl:w-1/4">
+                <motion.div
+                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
                   <Image
                     className="mb-6 h-40 w-full rounded object-cover object-center"
                     src="https://dummyimage.com/720x400"
@@ -102,16 +102,16 @@ const Projects: NextPage = () => {
                     Fingerstache flexitarian street art 8-bit waistcoat.
                     Distillery hexagon disrupt edison bulbche.
                   </p>
-                </div>
-              </motion.div>
-              <motion.div
-                className="p-4 md:w-1/2 xl:w-1/4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <div className="rounded-lg bg-cstmblack p-6 dark:bg-white">
+                </motion.div>
+              </div>
+              <div className="p-4 md:w-1/2 xl:w-1/4">
+                <motion.div
+                  className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  whileHover={{ scale: 1.1 }}
+                >
                   <Image
                     className="mb-6 h-40 w-full rounded object-cover object-center"
                     src="https://dummyimage.com/720x400"
@@ -129,8 +129,8 @@ const Projects: NextPage = () => {
                     Fingerstache flexitarian street art 8-bit waistcoat.
                     Distillery hexagon disrupt edison bulbche.
                   </p>
-                </div>
-              </motion.div>
+                </motion.div>
+              </div>
             </div>
           </div>
         </section>
