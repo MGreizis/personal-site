@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import plushieMarketplace from "../../public/plushie-marketplace.png";
+import adventureGame from "../../public/adventure-game.png";
 
 const Projects: NextPage = () => {
   return (
@@ -75,21 +76,30 @@ const Projects: NextPage = () => {
               >
                 <Image
                   className="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="https://dummyimage.com/720x400"
+                  src={adventureGame}
                   alt="content"
                   width="720"
                   height="400"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                  SUBTITLE
+                  CONSOLE GAME
                 </h3>
                 <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                  One of my projects
+                  CLI Adventure Game built with Java
                 </h2>
                 <p className="leading-relaxed text-white dark:text-cstmblack">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  A simple CLI-based adventure game built with Java.
+                  Design Patterns were strictly followed to create the game.
                 </p>
+                <div className="flex flex-wrap">
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://github.com/MGreizis/sde-console-program"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </motion.div>
             </div>
             <div className="p-4 md:w-1/2 xl:w-1/4">
