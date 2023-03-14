@@ -51,12 +51,14 @@ const Projects: NextPage = () => {
                   <a
                     className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
                     href="https://github.com/MGreizis/brainnest-week2"
+                    target="_blank"
                   >
                     GitHub
                   </a>
                   <a
                     className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
                     href="https://mgreizis.github.io/brainnest-week2/"
+                    target="_blank"
                   >
                     Live Demo
                   </a>
