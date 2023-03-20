@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import plushieMarketplace from "../../public/plushie-marketplace.png";
 import adventureGame from "../../public/adventure-game.png";
 import lwm from "../../public/lwm.png";
+import calculator from "../../public/calculator.png";
 
 const Projects: NextPage = () => {
   return (
@@ -47,7 +48,7 @@ const Projects: NextPage = () => {
                 </h2>
                 <p className="leading-relaxed text-white dark:text-cstmblack">
                   A simple skeleton site for a plushie marketplace. It is built
-                  with plain HTML and CSS, as a group project
+                  with plain HTML and CSS, as a group project.
                 </p>
                 <div className="flex flex-wrap">
                   <a
@@ -149,21 +150,37 @@ const Projects: NextPage = () => {
               >
                 <Image
                   className="mb-6 h-40 w-full rounded object-cover object-center"
-                  src="https://dummyimage.com/800x500"
+                  src={calculator}
                   alt="content"
                   width="800"
                   height="500"
                 />
                 <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                  SUBTITLE
+                  CALCULATOR
                 </h3>
                 <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                  One of my projects
+                  A simple calcuator built with JavaScript
                 </h2>
                 <p className="leading-relaxed text-white dark:text-cstmblack">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  A simple calculator built with HTML, CSS and JavaScript,
+                  as part of a group project.
                 </p>
+                <div className="flex flex-wrap">
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://github.com/MGreizis/brainnest-calculator"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://mgreizis.github.io/brainnest-calculator/"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </div>
               </motion.div>
             </div>
           </div>
