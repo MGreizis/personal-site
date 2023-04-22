@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import plushieMarketplace from "../../public/plushie-marketplace.png";
 import adventureGame from "../../public/adventure-game.png";
 import lwm from "../../public/lwm.png";
-import calculator from "../../public/calculator.png";
+import gym from "../../public/gym-site.png";
 
 const Projects: NextPage = () => {
   return (
@@ -25,6 +25,49 @@ const Projects: NextPage = () => {
       >
         <section className="body-font container mx-auto px-5 py-24">
           <div className="-m-4 flex flex-wrap">
+            <div className="p-4 md:w-1/2 xl:w-1/4">
+              <motion.div
+                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }}
+                whileHover={{ scale: 1.1 }}
+              >
+                <Image
+                  className="mb-6 h-40 w-full rounded object-cover object-center"
+                  src={gym}
+                  alt="content"
+                  width="800"
+                  height="500"
+                />
+                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
+                  GYM WEBSITE
+                </h3>
+                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
+                  A simple gym website built with React
+                </h2>
+                <p className="leading-relaxed text-white dark:text-cstmblack">
+                  A gym website built with React and Tailwind CSS. It is
+                  fully responsive, yet simple and clean.
+                </p>
+                <div className="flex flex-wrap">
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://github.com/MGreizis/gym-website"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
+                    href="https://evogym-jade.vercel.app/"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </motion.div>
+            </div>
             <div className="p-4 md:w-1/2 xl:w-1/4">
               <motion.div
                 className="rounded-lg bg-cstmblack p-6 dark:bg-white"
@@ -136,49 +179,6 @@ const Projects: NextPage = () => {
                     target="_blank"
                   >
                     GitHub
-                  </a>
-                </div>
-              </motion.div>
-            </div>
-            <div className="p-4 md:w-1/2 xl:w-1/4">
-              <motion.div
-                className="rounded-lg bg-cstmblack p-6 dark:bg-white"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1 }}
-                whileHover={{ scale: 1.1 }}
-              >
-                <Image
-                  className="mb-6 h-40 w-full rounded object-cover object-center"
-                  src={calculator}
-                  alt="content"
-                  width="800"
-                  height="500"
-                />
-                <h3 className="title-font text-xs font-bold tracking-widest text-white dark:text-cstmpurple">
-                  CALCULATOR
-                </h3>
-                <h2 className="title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack">
-                  A simple calcuator built with JavaScript
-                </h2>
-                <p className="leading-relaxed text-white dark:text-cstmblack">
-                  A simple calculator built with HTML, CSS and JavaScript,
-                  as part of a group project.
-                </p>
-                <div className="flex flex-wrap">
-                  <a
-                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
-                    href="https://github.com/MGreizis/brainnest-calculator"
-                    target="_blank"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    className="pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple"
-                    href="https://mgreizis.github.io/brainnest-calculator/"
-                    target="_blank"
-                  >
-                    Live Demo
                   </a>
                 </div>
               </motion.div>
