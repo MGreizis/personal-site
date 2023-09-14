@@ -79,7 +79,7 @@ const Contact: NextPage = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className="w-full pt-3">
+                <div className="w-full py-3">
                   <motion.button
                     className="mx-auto flex rounded border-0 bg-cstmpurple py-2 px-8 text-lg 
                     text-beige hover:bg-cstmblack focus:outline-none 
@@ -90,13 +90,13 @@ const Contact: NextPage = () => {
                     Button
                   </motion.button>
                 </div>
-                <figure className="mt-8 w-full border-t-2 border-cstmpurple p-2 pt-8 text-center dark:border-beige">
+                <figure className="mt-5 w-full border-t-2 border-cstmpurple p-2 pt-2 text-center dark:border-beige">
                   <p className="my-5 leading-normal">
                     Or you can find me on social media:
                   </p>
                   <span className="inline-flex">
                     <a
-                      className="ml-4 dark:text-beige"
+                      className="dark:text-beige"
                       href="https://github.com/MGreizis"
                       target="_blank"
                     >
