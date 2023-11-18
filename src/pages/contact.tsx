@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { type NextPage } from "next";
 import Head from "next/head";
 import Header from "./components/header";
@@ -8,7 +9,49 @@ import LinkedInSVG from "./components/svg/LinkedInSVG";
 import InstagramSVG from "./components/svg/InstagramSVG";
 import { motion } from "framer-motion";
 
+type FormValues = {
+  name: string;
+  email: string;
+  message: string;
+};
+
 const Contact: NextPage = () => {
+  const [formData, setFormData] = useState<FormValues>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("api/sendEmail", {
+        method: "POST",
+        headers: { "Content-Type": "application/json",
+       },
+       body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        console.log("Email sent successfully!");
+      } else {
+        console.error("Failed to send email");
+      }
+    } catch (error) {
+      console.error("Failed to send email: ", error);
+    }
+  }
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+      setFormData({
+        ...formData,
+        [e.currentTarget.id]: e.target.value,
+      });
+    };
+
   return (
     <>
       <Head>
@@ -33,7 +76,10 @@ const Contact: NextPage = () => {
                 send me an email!
               </p>
             </header>
-            <form className="mx-auto md:w-2/3 lg:w-1/2">
+            <form 
+              onSubmit={handleSubmit}
+              className="mx-auto md:w-2/3 lg:w-1/2"
+            >
               <div className="-m-2 flex flex-wrap">
                 <div className="w-1/2 p-2">
                   <div className="relative">
@@ -43,6 +89,8 @@ const Contact: NextPage = () => {
                     <input
                       type="text"
                       id="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50
                       py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out
                       focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
@@ -58,6 +106,8 @@ const Contact: NextPage = () => {
                     <input
                       type="email"
                       id="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
                       py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out 
                       focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
@@ -72,6 +122,8 @@ const Contact: NextPage = () => {
                     </label>
                     <textarea
                       id="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="h-32 w-full resize-none rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
                       py-1 px-3 text-base leading-6 outline-none transition-colors duration-200 ease-in-out 
                       focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
@@ -79,8 +131,9 @@ const Contact: NextPage = () => {
                     ></textarea>
                   </div>
                 </div>
-                <div className="w-full py-3">
+                <div className="w-full pt-3">
                   <motion.button
+                    type="submit"
                     className="mx-auto flex rounded border-0 bg-cstmpurple py-2 px-8 text-lg 
                     text-beige hover:bg-cstmblack focus:outline-none 
                     dark:bg-beige dark:text-cstmblack dark:hover:bg-white"
@@ -90,13 +143,13 @@ const Contact: NextPage = () => {
                     Button
                   </motion.button>
                 </div>
-                <figure className="mt-5 w-full border-t-2 border-cstmpurple p-2 pt-2 text-center dark:border-beige">
+                <figure className="mt-8 w-full border-t-2 border-cstmpurple p-2 pt-8 text-center dark:border-beige">
                   <p className="my-5 leading-normal">
                     Or you can find me on social media:
                   </p>
                   <span className="inline-flex">
                     <a
-                      className="dark:text-beige"
+                      className="ml-4 dark:text-beige"
                       href="https://github.com/MGreizis"
                       target="_blank"
                     >
