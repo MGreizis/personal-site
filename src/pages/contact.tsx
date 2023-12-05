@@ -9,18 +9,14 @@ import LinkedInSVG from "./components/svg/LinkedInSVG";
 import InstagramSVG from "./components/svg/InstagramSVG";
 import { motion } from "framer-motion";
 
-type FormValues = {
-  name: string;
-  email: string;
-  message: string;
-};
-
 const Contact: NextPage = () => {
-  const [formData, setFormData] = useState<FormValues>({
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  });
+  }
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const [isEmailSent, setIsEmailSent] = useState<boolean | null>(null);
 
@@ -38,6 +34,7 @@ const Contact: NextPage = () => {
       if (response.ok) {
         console.log("Email sent successfully!");
         setIsEmailSent(true);
+        setFormData(initialFormData); // clear the form if email sent successfully
       } else {
         console.error("Failed to send email");
         setIsEmailSent(false);
