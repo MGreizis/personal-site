@@ -14,7 +14,7 @@ const Contact: NextPage = () => {
     name: "",
     email: "",
     message: "",
-  }
+  };
 
   const [formData, setFormData] = useState(initialFormData);
 
@@ -26,9 +26,8 @@ const Contact: NextPage = () => {
     try {
       const response = await fetch("https://formspree.io/f/mnqkeqnq", {
         method: "POST",
-        headers: { "Content-Type": "application/json",
-       },
-       body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -43,16 +42,16 @@ const Contact: NextPage = () => {
       console.error("Failed to send email: ", error);
       setIsEmailSent(false);
     }
-  }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-      setFormData({
-        ...formData,
-        [e.currentTarget.id]: e.target.value,
-      });
-    };
+  ) => {
+    setFormData({
+      ...formData,
+      [e.currentTarget.id]: e.target.value,
+    });
+  };
 
   return (
     <>
@@ -78,7 +77,7 @@ const Contact: NextPage = () => {
                 send me an email!
               </p>
             </header>
-            <form 
+            <form
               onSubmit={handleSubmit}
               className="mx-auto md:w-2/3 lg:w-1/2"
               action="https://formspree.io/f/mnqkeqnq"
@@ -189,8 +188,8 @@ const Contact: NextPage = () => {
               </div>
             </form>
             <div className="mt-4 text-center text-green-500 dark:text-green-400">
-              {isEmailSent === true && 'Email sent successfully!'}
-              {isEmailSent === false && 'Failed to send email.'}
+              {isEmailSent === true && "Email sent successfully!"}
+              {isEmailSent === false && "Failed to send email."}
             </div>
           </div>
         </section>
