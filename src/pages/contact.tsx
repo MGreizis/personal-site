@@ -26,7 +26,7 @@ const Contact: NextPage = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("api/sendEmail", {
+      const response = await fetch("https://formspree.io/f/mnqkeqnq", {
         method: "POST",
         headers: { "Content-Type": "application/json",
        },
@@ -79,6 +79,8 @@ const Contact: NextPage = () => {
             <form 
               onSubmit={handleSubmit}
               className="mx-auto md:w-2/3 lg:w-1/2"
+              action="https://formspree.io/f/mnqkeqnq"
+              method="POST"
             >
               <div className="-m-2 flex flex-wrap">
                 <div className="w-1/2 p-2">
@@ -89,6 +91,7 @@ const Contact: NextPage = () => {
                     <input
                       type="text"
                       id="name"
+                      name="name"
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50
@@ -106,6 +109,7 @@ const Contact: NextPage = () => {
                     <input
                       type="email"
                       id="email"
+                      name="email"
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
@@ -122,6 +126,7 @@ const Contact: NextPage = () => {
                     </label>
                     <textarea
                       id="message"
+                      name="message"
                       value={formData.message}
                       onChange={handleChange}
                       className="h-32 w-full resize-none rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
@@ -140,7 +145,7 @@ const Contact: NextPage = () => {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.8 }}
                   >
-                    Button
+                    Send
                   </motion.button>
                 </div>
                 <figure className="mt-8 w-full border-t-2 border-cstmpurple p-2 pt-8 text-center dark:border-beige">
