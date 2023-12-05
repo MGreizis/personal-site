@@ -15,6 +15,7 @@ const About: NextPage = () => {
       <Header />
       <main className="flex min-h-screen min-w-full items-center justify-evenly 
       bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple">
+        <p>test</p>
       </main>
       <Footer />
     </>
