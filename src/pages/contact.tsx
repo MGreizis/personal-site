@@ -22,6 +22,8 @@ const Contact: NextPage = () => {
     message: "",
   });
 
+  const [isEmailSent, setIsEmailSent] = useState<boolean | null>(null);
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -35,11 +37,14 @@ const Contact: NextPage = () => {
 
       if (response.ok) {
         console.log("Email sent successfully!");
+        setIsEmailSent(true);
       } else {
         console.error("Failed to send email");
+        setIsEmailSent(false);
       }
     } catch (error) {
       console.error("Failed to send email: ", error);
+      setIsEmailSent(false);
     }
   }
 
@@ -186,6 +191,10 @@ const Contact: NextPage = () => {
                 </figure>
               </div>
             </form>
+            <div className="mt-4 text-center text-green-500 dark:text-green-400">
+              {isEmailSent === true && 'Email sent successfully!'}
+              {isEmailSent === false && 'Failed to send email.'}
+            </div>
           </div>
         </section>
       </main>
