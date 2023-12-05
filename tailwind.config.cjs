@@ -5,6 +5,11 @@ module.exports = {
   mode: "jit",
   darkMode: "class",
   theme: {
+    screens: {
+      sm: "425px",
+      md: "768px",
+      lg: "1024px",
+    },
     extend: {
       colors: {
         beige: "#e2d5c3",

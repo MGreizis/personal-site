@@ -15,7 +15,7 @@ export default function Header() {
             Placeholder
           </Link>
         </span>
-        <nav className="flex flex-wrap items-center justify-center text-xl text-cstmblack dark:text-beige md:ml-auto">
+        <nav className="flex flex-wrap items-center justify-center lg:text-xl md:text-lg sm:text-base text-cstmblack dark:text-beige md:ml-auto">
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
@@ -45,7 +45,7 @@ export default function Header() {
           <button
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             className="mt-4 inline-flex items-center rounded py-1 px-3 
-            text-xl hover:text-cstmpurple focus:outline-none dark:hover:text-white md:mt-0"
+            lg:text-xl md:text-lg sm:text-base hover:text-cstmpurple focus:outline-none dark:hover:text-white md:mt-0"
           >
             Dark Toggle
           </button>
