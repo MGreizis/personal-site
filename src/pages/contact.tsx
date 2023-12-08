@@ -70,7 +70,7 @@ const Contact: NextPage = () => {
         bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
       >
         <section className="body-font relative text-cstmblack dark:text-beige">
-          <div className="container mx-auto px-5 py-16">
+          <div className="container mx-auto px-5 py-16 sm:py-8">
             <header className="mb-8 text-center">
               <h1 className="title-font mb-4 text-3xl font-medium sm:text-3xl">
                 Contact Me
