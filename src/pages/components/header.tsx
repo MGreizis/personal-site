@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   const { theme, setTheme } = useTheme();
+  
+  const linkClasses = "mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white";
+
   return (
     <header className="body-font relative bg-beige text-xl text-cstmblack dark:bg-cstmblack dark:text-beige">
       <div className="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row">
@@ -19,7 +22,7 @@ export default function Header() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
+            className={`${linkClasses}`}
             href="about"
           >
             About Me
@@ -27,7 +30,7 @@ export default function Header() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
+            className={`${linkClasses}`}
             href="projects"
           >
             My Work
@@ -35,7 +38,7 @@ export default function Header() {
           <motion.a
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.8 }}
-            className="mr-6 hover:border-b-2 hover:border-cstmpurple hover:text-cstmpurple dark:hover:text-white"
+            className={`${linkClasses}`}
             href="contact"
           >
             Contact

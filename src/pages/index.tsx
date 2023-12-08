@@ -18,11 +18,11 @@ const Home: NextPage = () => {
 
       <Header />
       <main
-        className="flex min-h-screen min-w-full items-center justify-evenly
+        className="flex sm:flex-col md:flex-row sm:min-h-fit md:min-h-screen min-w-full items-center justify-evenly
         bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
       >
         <motion.section
-          className="flex max-w-[50%] flex-col lg:pl-24 md:pl-20 sm:pl-16"
+          className="flex max-w-[50%] flex-col lg:pl-24 md:pl-20"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

@@ -53,6 +53,9 @@ const Contact: NextPage = () => {
     });
   };
 
+  const inputClasses = "w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-cstmblack focus:ring-1 focus:ring-cstmblack dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+  const socialMediaLinkClasses = "ml-4 dark:text-beige"
+
   return (
     <>
       <Head>
@@ -95,10 +98,7 @@ const Contact: NextPage = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50
-                      py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out
-                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
-                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className={`${inputClasses}`}
                     />
                   </div>
                 </div>
@@ -113,10 +113,7 @@ const Contact: NextPage = () => {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
-                      py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out 
-                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
-                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className={`${inputClasses}`}
                     />
                   </div>
                 </div>
@@ -130,10 +127,7 @@ const Contact: NextPage = () => {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      className="h-32 w-full resize-none rounded border border-cstmpurple bg-gray-100 bg-opacity-50 
-                      py-1 px-3 text-base leading-6 outline-none transition-colors duration-200 ease-in-out 
-                      focus:border-cstmblack focus:ring-1 focus:ring-cstmblack 
-                      dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
+                      className={`${inputClasses} h-32 leading-6 resize-none`}
                     ></textarea>
                   </div>
                 </div>
@@ -155,7 +149,7 @@ const Contact: NextPage = () => {
                   </p>
                   <span className="inline-flex">
                     <a
-                      className="ml-4 dark:text-beige"
+                      className={`${socialMediaLinkClasses}`}
                       href="https://github.com/MGreizis"
                       target="_blank"
                     >
@@ -163,21 +157,21 @@ const Contact: NextPage = () => {
                     </a>
 
                     <a
-                      className="ml-4 dark:text-beige"
+                      className={`${socialMediaLinkClasses}`}
                       href="https://www.linkedin.com/in/m%C4%81rti%C5%86%C5%A1-greizis-133476257/"
                       target="_blank"
                     >
                       <LinkedInSVG />
                     </a>
                     <a
-                      className="ml-4 dark:text-beige"
+                      className={`${socialMediaLinkClasses}`}
                       href="https://www.instagram.com/graizies/"
                       target="_blank"
                     >
                       <InstagramSVG />
                     </a>
                     <a
-                      className="ml-4 dark:text-beige"
+                      className={`${socialMediaLinkClasses}`}
                       href="https://www.facebook.com/martins.greizis.5/"
                       target="_blank"
                     >
