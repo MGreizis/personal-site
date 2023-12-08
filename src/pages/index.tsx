@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
       <Header />
       <main
-        className="flex sm:flex-col md:flex-row sm:min-h-fit md:min-h-screen min-w-full items-center justify-evenly
+        className="flex sm:flex-col md:flex-row min-h-screen min-w-full items-center justify-evenly
         bg-gradient-to-b from-beige to-white dark:from-cstmblack dark:to-cstmpurple"
       >
         <motion.section
