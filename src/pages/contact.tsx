@@ -54,7 +54,7 @@ const Contact: NextPage = () => {
   };
 
   const inputClasses = "w-full rounded border border-cstmpurple bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 outline-none transition-colors duration-200 ease-in-out focus:border-cstmblack focus:ring-1 focus:ring-cstmblack dark:border-beige dark:focus:border-white dark:focus:ring-1 dark:focus:ring-beige"
-  const socialMediaLinkClasses = "ml-4 dark:text-beige"
+  const socialMediaLinkClasses = "mx-2 dark:text-beige"
 
   return (
     <>
