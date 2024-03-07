@@ -190,7 +190,7 @@ const Contact: NextPage = () => {
         </section>
       </main>
       <Footer />
-      <Analytics id="prj_KZ6pXgBoJD1X60mMikwEQBBaaInY" />
+      <Analytics />
     </>
   );
 };

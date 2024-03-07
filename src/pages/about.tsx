@@ -19,7 +19,7 @@ const About: NextPage = () => {
         <p className="text-beige">test</p>
       </main>
       <Footer />
-      <Analytics id="prj_KZ6pXgBoJD1X60mMikwEQBBaaInY" />
+      <Analytics />
     </>
   );
 };
