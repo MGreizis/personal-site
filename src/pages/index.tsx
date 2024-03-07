@@ -6,7 +6,6 @@ import Footer from "./components/footer";
 import selfImage from "../../public/self.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Analytics } from "@vercel/analytics/react"
 
 const Home: NextPage = () => {
   return (
@@ -55,7 +54,6 @@ const Home: NextPage = () => {
         </motion.section>
       </main>
       <Footer />
-      <Analytics />
     </>
   );
 };
