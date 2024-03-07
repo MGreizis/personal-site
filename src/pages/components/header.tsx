@@ -15,7 +15,7 @@ export default function Header() {
             className="inline-block whitespace-nowrap px-3 font-bold uppercase leading-relaxed dark:text-beige"
             href="/"
           >
-            Placeholder
+            MGreizis
           </Link>
         </span>
         <nav className="flex flex-wrap items-center justify-center lg:text-xl md:text-lg sm:text-base text-cstmblack dark:text-beige md:ml-auto">
