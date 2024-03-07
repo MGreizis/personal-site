@@ -8,6 +8,7 @@ import FacebookSVG from "./components/svg/FacebookSVG";
 import LinkedInSVG from "./components/svg/LinkedInSVG";
 import InstagramSVG from "./components/svg/InstagramSVG";
 import { motion } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react"
 
 const Contact: NextPage = () => {
   const initialFormData = {
@@ -189,6 +190,7 @@ const Contact: NextPage = () => {
         </section>
       </main>
       <Footer />
+      <Analytics id="prj_KZ6pXgBoJD1X60mMikwEQBBaaInY" />
     </>
   );
 };

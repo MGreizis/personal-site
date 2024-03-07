@@ -8,6 +8,7 @@ import plushieMarketplace from "../../public/plushie-marketplace.png";
 import adventureGame from "../../public/adventure-game.png";
 import lwm from "../../public/lwm.png";
 import gym from "../../public/gym-site.png";
+import { Analytics } from "@vercel/analytics/react"
 
 const Projects: NextPage = () => {
   const imageClasses = "mb-6 h-40 w-full rounded object-cover object-center";
@@ -193,6 +194,7 @@ const Projects: NextPage = () => {
         </section>
       </main>
       <Footer />
+      <Analytics id="prj_KZ6pXgBoJD1X60mMikwEQBBaaInY"/>
     </>
   );
 };
