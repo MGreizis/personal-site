@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <Head>
         <title>MGreizis</title>
         <meta name="description" content="Personal website" />
-        <link rel="icon" href="/public/catfavicon.jpg" />
+        <link rel="icon" href="/public/favicon.ico" />
       </Head>
 
       <Header />
