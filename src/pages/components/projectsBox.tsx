@@ -15,7 +15,7 @@ const ProjectsBox = ({ projectTitle, shortDescription, description, githubLink, 
   const viewProjectLinkClasses =
     "pt-2 pr-4 font-bold text-beige hover:text-white dark:text-cstmblack dark:hover:text-cstmpurple";
   const shortDescriptionClasses =
-    "title-font mb-4 text-lg font-bold text-beige dark:text-cstmblack";
+    "title-font mb-2 text-lg font-bold text-beige dark:text-cstmblack";
   const descriptionClasses = "leading-relaxed text-white dark:text-cstmblack";
 
   return (
