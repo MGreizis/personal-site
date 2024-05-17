@@ -27,7 +27,7 @@ const AboutBox = ({ image, location, experience, city, date, description }: {
           <Image 
             className="h-48 w-full object-cover md:h-full md:w-64"
             src={image} 
-            alt="Picture of university building"
+            alt="Picture to go along with description"
             width={500}
             height={500}
           />
