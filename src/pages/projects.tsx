@@ -33,6 +33,7 @@ const Projects: NextPage = () => {
               githubLink={"https://github.com/MGreizis/f1-data-dashboard"}
               viewProjectLink={"https://f1-data-dashboard.vercel.app/"}
             />
+
             <ProjectsBox 
               projectTitle={"GYM WEBSITE"}
               shortDescription={"Simple gym website built with React"}
@@ -41,6 +42,7 @@ const Projects: NextPage = () => {
               githubLink={"https://github.com/MGreizis/gym-website"}
               viewProjectLink={"https://github.com/MGreizis/gym-website"}
             />
+
             <ProjectsBox 
               projectTitle={"MARKETPLACE"}
               shortDescription={"Skeleton site for a Plushie Marketplace"}
@@ -49,6 +51,7 @@ const Projects: NextPage = () => {
               githubLink={"https://github.com/MGreizis/brainnest-week2"}
               viewProjectLink={"https://mgreizis.github.io/brainnest-week2/"}
             />
+
             <ProjectsBox 
               projectTitle={"CONSOLE GAME"}
               shortDescription={"CLI Adventure Game built with Java"}
@@ -56,6 +59,7 @@ const Projects: NextPage = () => {
               image={adventureGame}
               githubLink={"https://github.com/MGreizis/sde-console-program"}
             />
+            
             <ProjectsBox 
               projectTitle={"INTRANET"}
               shortDescription={"An Intranet built with Laravel and Bulma"}
