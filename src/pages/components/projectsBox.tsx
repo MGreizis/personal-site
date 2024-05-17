@@ -5,8 +5,8 @@ const ProjectsBox = ({ projectTitle, shortDescription, description, githubLink, 
   projectTitle: string, 
   shortDescription: string, 
   description: string, 
-  githubLink: string, 
   image: StaticImageData, 
+  githubLink: string, 
   viewProjectLink?: string 
 }) => {
   const imageClasses = "mb-6 h-40 w-full rounded object-cover object-center";
