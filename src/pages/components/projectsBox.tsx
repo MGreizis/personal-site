@@ -21,7 +21,7 @@ const ProjectsBox = ({ projectTitle, shortDescription, description, githubLink, 
   return (
     <div className="p-4 md:w-1/2 xl:w-1/4">
       <motion.div
-        className="rounded-lg bg-cstmblack p-6 dark:bg-white"
+        className="rounded-lg bg-cstmblack p-6 dark:bg-white min-h-[450px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
