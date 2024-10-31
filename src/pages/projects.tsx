@@ -40,7 +40,7 @@ const Projects: NextPage = () => {
               description={"Gym website built with React and Tailwind CSS. It is fully responsive, yet simple and clean."}
               image={gym}
               githubLink={"https://github.com/MGreizis/gym-website"}
-              viewProjectLink={"https://github.com/MGreizis/gym-website"}
+              viewProjectLink={"https://evogym-jade.vercel.app/"}
             />
 
             <ProjectsBox 
